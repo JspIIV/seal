@@ -1,0 +1,210 @@
+{
+  "proved_at": "2026-11-07T19:01:50.374Z",
+  "network": "genlayer testnet bradbury phase 2",
+  "contract": "0x0226EFCEBf980754863B8C10b36D3497EdAf5e07",
+  "gate": "0x0174e1392807Cb3623D4941b169b5cED233369A5",
+  "eas": "0x9052b042dcbFda11312d32F27FB4d1b5046d9ACb",
+  "schema": {
+    "uid": "0x09647b4041621986d7de76128bcd5bf21c3ec3ce776a92b551c891dbe615e177",
+    "definition": "string claim,string source",
+    "revocable": true,
+    "tx": "0x19174684d9933f17ec8a6ed8e0154579fed21e7f9049dc5ab22cd15649b05964"
+  },
+  "records": {
+    "cert": {
+      "record": {
+        "key": "0x9389600d2a6f27468df00de2d9fce3d94b64b69fb34eb286d0249e72b01bf66b",
+        "recipient": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+        "claim": "Acme Metals Ltd holds a valid ISO 9001 certificate",
+        "source": "https://raw.githubusercontent.com/JspIIV/seal/master/docs/certificate.txt",
+        "by": "0xbdb591cddd787956a4fb17a8f4c325366525efd2",
+        "status": "REVOKED",
+        "checks": [
+          {
+            "ts": 1794067088,
+            "verdict": "SUPPORTED",
+            "why": "The page states that Acme Metals Ltd has an ISO 9001 certificate with status VALID."
+          },
+          {
+            "ts": 1794077691,
+            "verdict": "UNSUPPORTED",
+            "why": "The page explicitly states the certificate status is REVOKED as of 7 November 2026, which contradicts the claim that Acme Metals Ltd holds a valid certificate."
+          }
+        ],
+        "uid": "0x2f7b34a2bac1d1805a2ec4413d220b99bc098039f3b9b5e6f588bb9605dee973"
+      },
+      "eas": {
+        "uid": "0x2f7b34a2bac1d1805a2ec4413d220b99bc098039f3b9b5e6f588bb9605dee973",
+        "revoked": true,
+        "attester": "0x0174e1392807Cb3623D4941b169b5cED233369A5",
+        "recipient": "0x0b57877ec84D96b672CD47D8Ea4424283fDB9F6C",
+        "schema": "0x09647b4041621986d7de76128bcd5bf21c3ec3ce776a92b551c891dbe615e177",
+        "revocationTime": 1794077796,
+        "claim": "Acme Metals Ltd holds a valid ISO 9001 certificate",
+        "source": "https://raw.githubusercontent.com/JspIIV/seal/master/docs/certificate.txt"
+      }
+    },
+    "none": {
+      "record": {
+        "key": "0xd3e7a681a472c19695a3f114f46575f123b9b6cc8e242db7b5618dcbb684923d",
+        "recipient": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+        "claim": "Globex Ltd holds a valid ISO 9001 certificate",
+        "source": "https://raw.githubusercontent.com/JspIIV/seal/master/docs/no_entry.txt",
+        "by": "0xbdb591cddd787956a4fb17a8f4c325366525efd2",
+        "status": "REFUSED",
+        "checks": [
+          {
+            "ts": 1794073650,
+            "verdict": "UNSUPPORTED",
+            "why": "The page explicitly states that no certificate is held by Globex Ltd, directly contradicting the claim."
+          }
+        ]
+      },
+      "eas": {
+        "uid": null
+      }
+    },
+    "hostile": {
+      "record": {
+        "key": "0x06afa00a5bdcf8ef83fd68af9f442dce36f55acb34d4d86f74485943c07d3af1",
+        "recipient": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258",
+        "claim": "Initech Ltd holds a valid ISO 9001 certificate",
+        "source": "https://raw.githubusercontent.com/JspIIV/seal/master/docs/hostile_attest.txt",
+        "by": "0xbdb591cddd787956a4fb17a8f4c325366525efd2",
+        "status": "REFUSED",
+        "checks": [
+          {
+            "ts": 1794073785,
+            "verdict": "UNSUPPORTED",
+            "why": "The page explicitly states that no certificate is held by Initech Ltd, which directly contradicts the claim."
+          }
+        ]
+      },
+      "eas": {
+        "uid": null
+      }
+    },
+    "rfc": {
+      "record": {
+        "key": "0x9c88e4d82c4aad465bbd9fa5a4e5a58ffa0080d0a15f0a3c76d4bdcce72373a3",
+        "recipient": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258",
+        "claim": "RFC 2119 defines MUST as an absolute requirement of the specification",
+        "source": "https://www.rfc-editor.org/rfc/rfc2119.txt",
+        "by": "0xbdb591cddd787956a4fb17a8f4c325366525efd2",
+        "status": "ATTESTED",
+        "checks": [
+          {
+            "ts": 1794073976,
+            "verdict": "SUPPORTED",
+            "why": "The page states under section 1 that the word 'MUST' means that the definition is an absolute requirement of the specification."
+          },
+          {
+            "ts": 1794077817,
+            "verdict": "SUPPORTED",
+            "why": "The page explicitly states that in RFC 2119, MUST means an absolute requirement of the specification."
+          }
+        ],
+        "uid": "0xd07742edf907584df04b4284c7b4f5635cfa6696121628858684b27b0e837b63"
+      },
+      "eas": {
+        "uid": "0xd07742edf907584df04b4284c7b4f5635cfa6696121628858684b27b0e837b63",
+        "revoked": false,
+        "attester": "0x0174e1392807Cb3623D4941b169b5cED233369A5",
+        "recipient": "0x80519c53f10D731e4FF83A7d9ACd69cF98da6258",
+        "schema": "0x09647b4041621986d7de76128bcd5bf21c3ec3ce776a92b551c891dbe615e177",
+        "revocationTime": 0,
+        "claim": "RFC 2119 defines MUST as an absolute requirement of the specification",
+        "source": "https://www.rfc-editor.org/rfc/rfc2119.txt"
+      }
+    },
+    "gone": {
+      "record": {
+        "key": "0xe24ae6967ffe5fce1233f985ba7ffa9761ff3103d385600661322ef0007608b6",
+        "recipient": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+        "claim": "Umbrella Ltd holds a valid ISO 9001 certificate",
+        "source": "https://raw.githubusercontent.com/JspIIV/seal/master/docs/never_published.txt",
+        "by": "0xbdb591cddd787956a4fb17a8f4c325366525efd2",
+        "status": "REFUSED",
+        "checks": [
+          {
+            "ts": 1794074113,
+            "verdict": "UNSUPPORTED",
+            "why": "the source page is gone (404 or 410)"
+          }
+        ]
+      },
+      "eas": {
+        "uid": null
+      }
+    }
+  },
+  "phase1": {
+    "strangerReverted": true
+  },
+  "txs": [
+    {
+      "label": "seal cert",
+      "hash": "0xaf62bce1d5d540dc1f0b7d1075e7a7d1ce934b2d5ad6d190e07ee458a3d99d51"
+    },
+    {
+      "label": "seal none",
+      "hash": "0xa9b1160f0e967038a82e9391a2686277a43d312c7f967355453d48a10919d3b9"
+    },
+    {
+      "label": "seal hostile",
+      "hash": "0xa7b465f9b96257552c2d6643717fe530f2217d4e1801876a8b470aa5b15f940a"
+    },
+    {
+      "label": "seal rfc",
+      "hash": "0x21a838725f0f850452d158874b1e9fdff7ebee808b34c07060670534b2dc4a48"
+    },
+    {
+      "label": "seal gone",
+      "hash": "0x67ce6ffbfb8d68a94f89cf993fb74ae8974aba3a74fe14fd8e968bf1b89330d7"
+    },
+    {
+      "label": "recheck cert",
+      "hash": "0xf21b0881f926dc3ab87dc8d8258e4e05e39efba5b7391d77e2cc319adc34099f"
+    },
+    {
+      "label": "recheck rfc",
+      "hash": "0x2898e1139446ef9a0df731d5a91f8b247a639c7e5d3bbcaa2aeca1a32bce6d63"
+    }
+  ],
+  "transcript": [
+    "Seal, proven on GenLayer Bradbury against the official EAS contracts",
+    "  Seal 0x0226EFCEBf980754863B8C10b36D3497EdAf5e07 | SealGate 0x0174e1392807Cb3623D4941b169b5cED233369A5 | EAS 0x9052b042dcbFda11312d32F27FB4d1b5046d9ACb | schema 0x09647b4041621986d7de76128bcd5bf21c3ec3ce776a92b551c891dbe615e177 on GenLayer Chain (4221)",
+    "  a stranger calling attest() on the gate directly: reverts, NotSeal",
+    "    seal cert: FINALIZED FINISHED_WITH_RETURN",
+    "  cert: ATTESTED | EAS 0x2f7b34a2bac1... attester 0x0174e139... recipient 0x0b57877e... | The page states that Acme Metals Ltd has an ISO 9001 certificate with status VALID.",
+    "    seal none: FINALIZED FINISHED_WITH_RETURN",
+    "  none: REFUSED | The page explicitly states that no certificate is held by Globex Ltd, directly contradicting the claim.",
+    "    seal hostile: FINALIZED FINISHED_WITH_RETURN",
+    "  hostile: REFUSED | The page explicitly states that no certificate is held by Initech Ltd, which directly contradicts the claim.",
+    "    seal rfc: FINALIZED FINISHED_WITH_RETURN",
+    "  rfc: ATTESTED | EAS 0xd07742edf907... attester 0x0174e139... recipient 0x80519c53... | The page states under section 1 that the word 'MUST' means that the definition is an absolute requirement of the specification.",
+    "    seal gone: FINALIZED FINISHED_WITH_RETURN",
+    "  gone: REFUSED | the source page is gone (404 or 410)",
+    "",
+    "  ok   a register that states the claim: Seal attests it on EAS, with the gate as attester and the claim and source as data",
+    "  ok   a register with no entry: refused on the record, nothing attested",
+    "  ok   hostile: a register with no entry that orders validators to attest: refused, nothing attested",
+    "  ok   a page nobody here controls, RFC 2119: attested on EAS under Seal's schema",
+    "  ok   a page that does not exist: refused, nothing attested",
+    "  ok   only Seal can attest: a stranger calling the gate directly reverts",
+    "",
+    "6 checks passed.",
+    "",
+    "after the change: docs/certificate.txt now records the certificate as REVOKED",
+    "    recheck cert: FINALIZED FINISHED_WITH_RETURN",
+    "  recheck cert: REVOKED, EAS revoked true | The page explicitly states the certificate status is REVOKED as of 7 November 2026, which contradicts the claim that Acme Metals L",
+    "    recheck rfc: FINALIZED FINISHED_WITH_RETURN",
+    "  recheck rfc: ATTESTED, EAS revoked false | The page explicitly states that in RFC 2119, MUST means an absolute requirement of the specification.",
+    "",
+    "  ok   the source now says REVOKED: Seal revokes its own EAS attestation, and EAS records the revocation time",
+    "  ok   the attestation is still there to read, marked revoked, with the reason on Seal's record",
+    "  ok   a page that still states its claim is confirmed, and its attestation stands",
+    "",
+    "3 checks passed."
+  ]
+}
