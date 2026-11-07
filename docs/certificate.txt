@@ -1,0 +1,4 @@
+Test fixture for the Seal proof. A fictional certification body.
+
+Northwind Certification register
+Acme Metals Ltd, ISO 9001:2015, certificate Q-2231, issued 3 March 2025, status VALID.

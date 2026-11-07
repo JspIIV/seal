@@ -1,0 +1,4 @@
+Test fixture for the Seal proof. A fictional certification body.
+
+Northwind Certification register
+No certificate is held by Globex Ltd. Last search 1 November 2026.

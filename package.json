@@ -1,0 +1,23 @@
+{
+  "name": "seal",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ethereum-attestation-service/eas-contracts": "^1.9.0",
+    "@openzeppelin/contracts": "5.3.0",
+    "ethers": "^6.17.0",
+    "genlayer-js": "^2.0.0-rc.2",
+    "solc": "^0.8.36",
+    "solc029": "npm:solc@^0.8.29"
+  },
+  "version": "1.0.0",
+  "description": "Seal: an attester on the Ethereum Attestation Service whose attestations are made and revoked by GenLayer consensus, with no relayer",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JspIIV/seal.git"
+  },
+  "scripts": {
+    "test": "python tests/seal_rules.py"
+  }
+}
